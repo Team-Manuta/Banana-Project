@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>That Yellow Thing</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+      <style>
+        body{ background-image: url(https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637073314/final_project/photo-1625360035923-cd8477c43b80_i6nmqk.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+        }
+        .p17{
+          font-family: 'Segoe UI';
+          font-weight: bolder;
+          font-style: italic;
+          font-size: 135px;
+          color: white;
+          text-shadow: 6px 4px 9px #FFD900;
+          padding-top: 60px;
+          text-align: center;
+        }
+        .p18{
+          text-align: center;
+          font-size: 30px;
+          font-family: arial;
+          color: white;
+          margin-left: 70px;
+          float: left;
+          margin-right: 70px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+        container{
+          margin: 30px;
+        }
+
+        .row{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .image{
+          background: yellow;
+          position: relative;
+          flex: 1;
+          max-width: 550px;
+          height: 300px;
+          margin: 20px;
+          overflow: hidden;
+          border-radius: 40px;
+        }
+
+        .image img{
+          position: relative;
+          vertical-align: top;
+          transition: 0.6s;
+        }
+
+        .image:hover img{
+          opacity: 0.7;
+        }
+
+        .image .details{
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: rgb(0, 0, 0);
+          width: 100%;
+          height: 100%;
+        }
+
+        .image .details h2{
+          text-align: center;
+          font-size: 35px;
+          text-transform: uppercase;
+          font-weight: 300;
+          margin-top: 70px;
+          transition: 0.4s;
+          transition-property: transform;
+        }
+
+        .image .details h2 span{
+          font-weight: 900;
+        }
+
+        .image:hover .details h2{
+          transform: translateY(-30px);
+        }
+
+        .image .details p{
+          margin: 30px 30px 0 30px;
+          font-family: Arial;
+          font-size: 20px;
+          font-weight: 600;
+          text-align: center;
+          opacity: 0;
+          transition: 0.6s;
+          transition-property: opacity, transform;
+        }
+
+        .image:hover .details p{
+          opacity: 1;
+          transform: translateY(-40px);
+        }
+
+        .image:hover .more{
+          bottom: 0;
+        }
+
+        .more .read-more{
+          color: #000;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .more .read-more span{
+          font-weight: 900;
+        }
+
+        .more .icon-links i{
+          color: #000;
+          font-size: 20px;
+        }
+
+        .more .icon-links a:not(:last-child) i{
+          margin-right: 20px;
+        }
+
+        /* Responsive CSS */
+
+        @media (max-width: 1080px){
+          .image{
+            flex: 100%;
+            max-width: 480px;
+          }
+        }
+
+        @media (max-width: 400px){
+          .image .details p{
+            font-size: 16px;
+          }
+        }
+              
+
+      </style>
+<!-------NAVIGATION-----NAVIGATION-----NAVIGATION-->
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Facts</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li><a href="../index_Home.html">Home</a></li>
+            <li>
+                <a href="#" class="desktop-item">Banana</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Banana</label>
+                <ul class="drop-menu">
+                  <li><a href="./index_Varieties.html">Varieties</a></li>
+                  <li><a href="./index_HealthBenefits.html">Health Benefits</a></li>
+                  <li><a href="./index_facts.html">Facts</a></li>
+                </ul>
+            </li>
+              <li><a href="./index_foods.html">Foods</a></li>
+              <li><a href="./index_AboutUs.html">About Us</a></li>
+            </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+<!-----FACTS-------FACTS-------FACTS-------FACTS----->
+        <p class="p17">
+          WHAT THE FACT?
+        </p>
+        <p class="p18">
+          We all know how funny the banana looks like, but the taste is seriously amazing.
+          To make it more interesting, here are some banana facts that you might not know!
+          <br>
+          <br>
+          <br>
+        </p>
+        <!--image card layout start-->
+    <div class="container">
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945731/final_project/facts/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_160c789d-bea5-4ceb-b0cd-74ba88388567_612x344_zxbres.jpg" alt="happy">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <br>
+            <p>Bananas are considered to be a fruit that could instantly brighten your mood.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637941446/final_project/facts/pangalawa_zq4ite.jpg" alt="hair">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <br>
+            <p>Bananas can restore dry and damaged hair.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637941269/final_project/facts/pangatlo_xf1mwt.jpg" alt="weigthloss">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>Bananas can aid in weight loss because they make you feel full and help regulate blood sugar levels.</p>
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945424/final_project/facts/pangapat_way1xk.jpg" alt="teeth">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>You can use banana peelings to naturally whiten your teeth in two weeks by rubbing the inside of the peeling against your teeth for two minutes each day.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945488/final_project/facts/panglima_imn46i.jpg" alt="hands">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>A cluster of bananas, called a “hand,” consists of 10 to 20 individual bananas, also known as fingers. In fact, the word banana comes from banan, the Arabic word for “finger.”</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945534/final_project/facts/panganim_gtey1q.jpg" alt="waruh">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>Bananas float in water, as do apples and watermelons. Bananas float in water because they are less dense in comparison like no other fruit.</p>
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+<!----OTHER ROW------->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637946774/final_project/facts/b25f8b76bef2b3a3dfce33849a2e5d5a_yupjlr.jpg" alt="alerta">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <p>If someone is allergic to bananas, they have a greatly increased risk of being allergic to latex
+              Latex is made from a class of chemicals called alpha-hydroxy acids, or AHAs. These are known as allergens that can cause reactions such as runny nose, itchy eyes, and sneezing.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637943181/final_project/facts/pangwalo_xtzvow.webp" alt="dna">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>We share about 50% of our DNA with bananas. hether you believe it or not, we do share about half of our DNA with a banana. In a sense, we are genetically related to bananas to some extent.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945033/final_project/facts/Tasty_-_Facebook_-_1080x1080_3_d4hjof.jpg" alt="banana-berry">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>The banana is scientifically a berry, whereas the strawberry is not. This comes down to the classification of a berry. A berry must contain seeds inside the flesh, not outside.</p>
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637945969/final_project/facts/f27b16a36d4941bda2b3800aef2b2666_bklhal.jpg" alt="Cavendish">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>There are more than 1,000 varieties of bananas grown in over 150 countries. Cavendish is the most commercialized variety, accounting for about 47% of global production.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637946280/final_project/facts/38d15e5c231d4f934d987210c92af2ba_aq5oic.jpg" alt="munheng">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>Bananas are great for relieving symptoms of morning sickness, including nausea and heartburn, so if you’re pregnant - keep one by your bed to eat as soon as you wake up!</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+          <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1637946439/final_project/facts/c3d43e32208e6851a8565d81716114a7_iaym7c.jpg" alt="sadyarn">
+          <div class="details">
+            <h2>DID YOU <span>KNOW THAT...</span></h2>
+            <br>
+            <p>Bananas can help to overcome depression and seasonal affective disorder (SAD), due to their high levels of tryptophan, which your body turns into serotonin; the happy-mood brain neurotransmitter.</p>
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+    </div>
+    <!--image card layout end-->
+      </body>
+</html>

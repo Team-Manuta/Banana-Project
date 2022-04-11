@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>That Yellow Thing</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    <style type="text/css">
+      body{
+      background-image: url(https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636559735/final_project/rainy-banana-gbd5d091ce_1920_xhhlse.png);
+      background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      #VAR  {
+      height: 200vh;
+      }
+      .heading1{
+      padding-top: 100px;
+      font-family: Arial;
+      font-size: 75px;
+      text-align: center;
+      color: #3c2c1c;
+      margin-bottom: 50px;
+      text-shadow: 7px 5px 3px white;
+      font-family: Georgia;
+      }
+    .modal-container1{
+      font-family: Georgia;
+      font-size: 50;
+      border-radius: 40px;
+      padding-bottom: 860px;
+      padding-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height: 400px;
+      padding-right: 20px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card {
+      position: relative;
+      margin-right: auto;
+      margin-bottom: 3%;
+      left: 3%;
+      width: 340px;
+      height: 370px;
+      transition: 0.3s ease-out;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.7);
+    }
+    .card .imgbox {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .card .imgbox img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      display: block;
+      transition: 0.5s;
+    }
+    .card .content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      padding: 12px;
+      background: #3c2c1cc5;
+      transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .card:hover .content {
+      width: 100%;
+      height: 75%;
+      left: 0;
+      bottom: 0;
+    }
+    .content p1{
+      margin: 10px 0 0;
+      padding: 1em 1em;
+      transform: translateY(2em);
+      line-height: 1.3em;
+      transition: 0.3s;
+      text-align: justify;
+      opacity: 0;
+      color: white;
+    }
+    .card:hover .content p1{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .card h2 {
+      text-align: center;
+      color: yellow;
+    }
+    .card:hover{
+      box-shadow: 0 0 5em rgba(0,0,0,0.4);
+    }
+    
+    /*FOR RESPONSIVE */
+      @media only screen and (max-width: 600px){
+      .content h2 {
+        font-size: 15px;
+      }
+      .content p {
+        font-size: 15px;
+        line-height: 22px;
+        display: block;
+      } 
+    }
+      @media only screen and (max-width: 500px) {
+        .content .modal-container1{
+        width: 46%;
+        margin: 0% 0%;
+        display: block;
+      }
+    }
+    @media only screen and (max-width: 900px){
+      .card .modal-container1 {
+        width: 36%;
+        margin: 0% 0%;
+        display: block;
+      }
+    }
+    </style>
+<body>
+  <!------------NAVIGATION BAR CODE---------- NAVIGATION BAR ------------NAVIGATION BAR------------NAVIGATION BAR------------------NAVIGATION BAR------------->
+          <nav>
+            <div class="wrapper">
+            <div class="logo"><a href="#">Varieties of Banana</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="../index_Home.html">Home</a></li>
+                <li>
+                    <a href="#" class="desktop-item">Banana</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Banana</label>
+                    <ul class="drop-menu">
+                    <li><a href="./index_Varieties.html">Varieties</a></li>
+                    <li><a href="./index_HealthBenefits.html">Health Benefits</a></li>
+                    <li><a href="./index_facts.html">Facts</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index_foods.html">Foods</a></li>
+                <li><a href="./index_AboutUs.html">About Us</a></li>
+                </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+        <!---THIS IS FOR VARIETIES-->
+        <div id="VAR">
+          <div  class="heading1">
+            Different Varieties of Banana
+          </div>
+          <div class="modal-container1">
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303500/types%20of%20saging/lakatan1_mmzwx5.jpg">
+              </div>
+              <div class="content">
+                  <h2>LAKATAN</h2>
+                  <p1>Lakatan bananas, also spelled Lacatan, are diploid banana cultivars from the Philippines. It is one of the most common banana cultivars in the Philippines</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303500/types%20of%20saging/utungan_vqu923.jpg">
+              </div>
+              <div class="content">
+                  <h2>UTUNGAN</h2>
+                  <p1>Suspected to be “Pelipia” Cultivar which is common in Mindanao. Said to get its name from how its tips resemble “utong” or nipples.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303500/types%20of%20saging/cavendish_irkpbu.jpg">
+              </div>
+              <div class="content">
+                  <h2>CAVENDISH</h2>
+                  <p1>Cavendish, or dessert, bananas are most commonly eaten fresh, though they may be fried or mashed and chilled in pies or puddings.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303500/types%20of%20saging/tindok_dnhrye.jpg">
+              </div>
+              <div class="content">
+                  <h2>TINDOK</h2>
+                  <p1>Tindok is described to be the most popular plantain in the Philippines. It comes as huge, long pieces with pointy, nipple-like ends</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303499/types%20of%20saging/inabaniko_fchmjo.jpg">
+              </div>
+              <div class="content">
+                  <h2>INABANIKO</h2>
+                  <p1> Praying Hands bananas are known as Inabaniko and Uht Kapakap in Micronesia and Ripping in the Philippines. Praying Hands bananas are a very distinct variety most closely related to the saba and blue java bananas of the Philippines.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303499/types%20of%20saging/latundan_qslakd.jpg">
+              </div>
+              <div class="content">
+                  <h2>LATUNDAN</h2>
+                  <p1>Latundan is said to have been introduced from India by a French clergyman, Letondal. Also very common around Manila (and said to be the most common of the dessert varieties all around the Philippines).</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303500/types%20of%20saging/morado_zy3xy1.jpg">
+              </div>
+              <div class="content">
+                  <h2>MORADO</h2>
+                  <p1>In Mindanao this banana is also called “Morado” which in english it means purple. The size is quite bigger compare to a regular banana but shorter than the regular Cavendish. It is considered as the most nutritious banana as it contains more carotene.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303502/types%20of%20saging/senorita_zxluzg.jpg">
+              </div>
+              <div class="content">
+                  <h2>SEÑORITA</h2>
+                  <p1>Señorita bananas are diploid cultivars of the banana Musa acuminata originating from the Philippines. They are very small stout bananas which, like all bananas belonging to the AA cultivar group, are known for being extraordinarily sweet.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303502/types%20of%20saging/saba_nbdlqu.jpg">
+              </div>
+              <div class="content">
+                  <h2>SABA</h2>
+                  <p1>In the Philippines, Saba bananas are commonly found growing throughout the Southeast Asian islands and the Indonesian archipelago. They are sold as street food in most towns and cities, particularly as “banana-Q”.</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303499/types%20of%20saging/lagkitan_tbgvtg.jpg">
+              </div>
+              <div class="content">
+                  <h2>LAGKITAN</h2>
+                  <p1>Lagkitan can be had raw or cooked. Pale yellow somewhat like Saba but with a shape similar to Latundan (that becomes rounded around the stem but pointy over the tip)</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303498/types%20of%20saging/bungulan_exh7ye.jpg">
+              </div>
+              <div class="content">
+                  <h2>BUNGULAN</h2>
+                  <p1>Bungulan' is a popular Cavendish cultivar from the Philippines, where it is also known as 'Bongolan', 'Balungun' and 'Bangalun' among other synonyms</p1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="imgbox">
+                <img src="https://res.cloudinary.com/uhno-dos-tres/image/upload/v1636303498/types%20of%20saging/bulkan_rg2ago.jpg">
+              </div>
+              <div class="content">
+                  <h2>BULKAN</h2>
+                  <p1>Has a sweet, tangy, “bubblegum-y” flavor, smooth and waxy-creamy texture, and the occasional presence of seeds; save for what seems to be a slightly more vivid yellow peel color as it ripens.</p1>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
